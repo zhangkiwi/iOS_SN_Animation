@@ -13,6 +13,9 @@
 		57788B181C1B14170087C467 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57788B161C1B14170087C467 /* Main.storyboard */; };
 		57788B1A1C1B14170087C467 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57788B191C1B14170087C467 /* Assets.xcassets */; };
 		57788B1D1C1B14170087C467 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57788B1B1C1B14170087C467 /* LaunchScreen.storyboard */; };
+		57788B261C1B14620087C467 /* CoreAnimationEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = 57788B251C1B14620087C467 /* CoreAnimationEffect.m */; };
+		57788B2B1C1B1EF60087C467 /* senViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 57788B2A1C1B1EF60087C467 /* senViewController.m */; };
+		57BF01001C1FBA6A00949F4E /* TriViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 57BF00FF1C1FBA6A00949F4E /* TriViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,12 @@
 		57788B191C1B14170087C467 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		57788B1C1C1B14170087C467 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		57788B1E1C1B14170087C467 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		57788B241C1B14620087C467 /* CoreAnimationEffect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreAnimationEffect.h; sourceTree = "<group>"; };
+		57788B251C1B14620087C467 /* CoreAnimationEffect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreAnimationEffect.m; sourceTree = "<group>"; };
+		57788B291C1B1EF60087C467 /* senViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = senViewController.h; sourceTree = "<group>"; };
+		57788B2A1C1B1EF60087C467 /* senViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = senViewController.m; sourceTree = "<group>"; };
+		57BF00FE1C1FBA6A00949F4E /* TriViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TriViewController.h; sourceTree = "<group>"; };
+		57BF00FF1C1FBA6A00949F4E /* TriViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TriViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +71,12 @@
 				57788B111C1B14170087C467 /* AppDelegate.m */,
 				57788B131C1B14170087C467 /* ViewController.h */,
 				57788B141C1B14170087C467 /* ViewController.m */,
+				57788B291C1B1EF60087C467 /* senViewController.h */,
+				57788B2A1C1B1EF60087C467 /* senViewController.m */,
+				57BF00FE1C1FBA6A00949F4E /* TriViewController.h */,
+				57BF00FF1C1FBA6A00949F4E /* TriViewController.m */,
+				57788B241C1B14620087C467 /* CoreAnimationEffect.h */,
+				57788B251C1B14620087C467 /* CoreAnimationEffect.m */,
 				57788B161C1B14170087C467 /* Main.storyboard */,
 				57788B191C1B14170087C467 /* Assets.xcassets */,
 				57788B1B1C1B14170087C467 /* LaunchScreen.storyboard */,
@@ -110,6 +125,7 @@
 				TargetAttributes = {
 					57788B091C1B14160087C467 = {
 						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = 6S3WEW63ZD;
 					};
 				};
 			};
@@ -150,7 +166,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				57788B151C1B14170087C467 /* ViewController.m in Sources */,
+				57788B2B1C1B1EF60087C467 /* senViewController.m in Sources */,
+				57BF01001C1FBA6A00949F4E /* TriViewController.m in Sources */,
 				57788B121C1B14170087C467 /* AppDelegate.m in Sources */,
+				57788B261C1B14620087C467 /* CoreAnimationEffect.m in Sources */,
 				57788B0F1C1B14170087C467 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -261,10 +280,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = iOS_SN_Animation/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "zhang.iOS-SN-Animation";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -272,10 +294,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = iOS_SN_Animation/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "zhang.iOS-SN-Animation";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -298,6 +323,7 @@
 				57788B231C1B14170087C467 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
